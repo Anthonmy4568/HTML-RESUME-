@@ -1,0 +1,73 @@
+* {box-sizing: border-box;}                                                     /* css page for part 2 of html project */ 
+                                                                                /* commenting for css learnt https://www.w3schools.com/css/css_comments.asp*/   
+                                                                                /* css colour picker site used https://redketchup.io/color-picker */ 
+                                                                                /* css styling for website learnt from https://www.w3schools.com/howto/howto_make_a_website.asp*/
+                                                                                /* css styling for website learnt from https://www.youtube.com/watch?v=Tfjd5yzCaxk
+                                                                                /* "*" selects all elements on the webpage */ 
+  body { font-family: Arial, Helvetica, sans-serif;                             /* this selects the fonts used in the webpage, for example if arial is not available the browser will attempt to use sans-seriff or helvitica to ensure readability across different devices */ 
+  margin: 0;}                                                                   /* <body> elementhelps create a consistent layout and spacing throughout the webpage */ 
+  
+  .header {                                                                     /* these styles are applied to the header in each html document  */ 
+    padding: 100px;                                                             /* This creates a large amount of space inside the header element. */ 
+    text-align: left;                                                           /* This aligns the text to the left of the webpage */
+    background: #B54343;                                                      /* This issues a red background*/
+    color: white;}                                                            /* This issues  white text*/
+  
+  .header h1 {  
+    font-size: 40px;}                                                           /* This determines the font size for the header*/
+  
+  .navbar {
+    overflow: hidden;                                                           /* This ensures that any content that extends beyond the boundaries of the navbar is hidden from view.*/
+    background-color: black;}                                                 /* This gives it a black background colour*/
+  
+  .navbar a {
+    float: left;                                                                /* floats the navbar elementsd to the left*/
+    display: block;                   
+    color: white;                                                             /* sets the colour of the elements to white*/
+    text-align: center;                                                         /* aligns the text to the centre of the padding*/
+    padding: 14px 20px;                                                         /* adds padding to the elements*/
+    text-decoration: none;}                                                     /*  Removes the default underline decoration*/
+  
+  .navbar a.right {float: right;}                                               /*  floats the "contactme" element of the navbar to the right*/
+  
+  .navbar a:hover {background-color: white; color: black;}                  /* background colour changes when hovering over with cursort*/         
+
+  .side {
+    background-color: white;                                                  /* sets the background colour to white*/   
+    padding: 20px;}                           
+  
+.profile-image {
+    position: absolute;                                                         /* positions elements in the most precise way possible*/   
+    top: 0;
+    right: 0;                                                                   /* positioned to the top right of the document*/   
+    width: 150px;                                                               /* width of the .img is 150pixels*/   
+    height: auto;                                                               /* auto allows the height of the elements to adjust automatically*/   
+    margin-top: 20px;                                                           /* adds a margin to the top and right of 20 pixels*/   
+    margin-right: 20px;}
+
+      
+      input[type=text], select, textarea {                                      /* contact form css styling*/   
+        width: 100%;                                                            /* contact form css styling  code learnt from https://www.w3schools.com/howto/howto_css_contact_form.asp*/   
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;}
+      
+      input[type=submit] {
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; }
+      
+      input[type=submit]:hover {                                                /* when cursor hovers over submit button it turns green*/   
+        background-color: green}
+      
+      .container {                                                              /*a border surrounds the chat form with a padding of 20pixels and a background red colour*/   
+        border-radius: 5px; 
+        background-color: #B54343;
+        padding: 20px;}

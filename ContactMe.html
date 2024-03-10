@@ -1,0 +1,43 @@
+<!DOCTYPE html>                                                         <!-- Contact page for part 2 of html project -->
+<html lang="en">                                                        <!-- specifies the language of the content -->
+<head>                                                                  <!-- title/link are stored in <head> element -->
+<title>Anthony Cronin CV</title>
+<link rel="stylesheet" href="styles.css">
+
+<div class="header">                                                    <!-- Groups <h1> , <img> & <p> together -->
+  <h1>Contact Me!</h1>
+  <img src="contact.png" class="profile-image">                         <!-- img code learnt from https://www.w3schools.com/tags/tag_img.asp -->
+</div>
+<div class="navbar">                                                    <!-- all elements of the navigation bar together -->
+    <a href="index.html">Home</a>                                       <!-- Navbar code learnt from https://www.w3schools.com/howto/howto_make_a_website.asp -->
+    <a href="work_experience.html">Work Experience</a>                  <!-- href specifies the url/file address -->
+    <a href="educational_details.html">Education</a>  
+    <a href="ContactMe.html" class="right">Contact Me!</a>              <!-- class = right positions the "contactme" to the right side of the navbar -->
+
+    </div><div class="row">
+    <div class="side">
+      
+       <h2>Contact Form</h2>
+
+        <div class="container">                                                               <!-- contact form learnt from https://www.w3schools.com/howto/howto_css_contact_form.asp -->                    
+          <form onsubmit="return validateSecondForm()">                                       <!--  <form> allows users to input their data into the form-->
+            <label for="fname">Full Name</label>                                              <!--  return validatesecondform executes a js function when the form is subbmited/attempted to be submitted-->
+            <input type="text" id="fname" name="fullname" placeholder="Your name..">          <!--  Here the user inputs their full name, a placeholder is in effect this acts as a hint as to what the user should input into the text box-->
+        
+            <label for="Email">Email</label>                                                  <!--  user inputs email into this text box here-->
+            <input type="text" id="email" name="email" placeholder="Your email.">
+        
+            <label for="subject">Subject</label>                                              <!--  subject of data is inputted here -->
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>  <!--  placeholder is also in effect here, "Write Something" -->
+        
+            <input type="submit" value="Submit">                                              <!--  when clicked the form is submitted -->
+          </form>
+        </div>
+        <script src="formValidation.js"></script>                                             <!--  script is used to link a html file to an external javascript file --> 
+        </body>                                                                               <!-- indicates the end of content on this page anything after wont be shown. -->
+        </html>                                                                               <!-- end of the webpage-->
+
+      
+        
+      
+        
